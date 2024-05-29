@@ -3,7 +3,6 @@
 # Nvidia - Check Readme for more details for the drivers #
 
 nvidia_pkg=(
-  openSUSE-repos-NVIDIA
   dkms
   libvdpau1
   libva-vdpau-driver
@@ -15,7 +14,7 @@ nvidia_pkg=(
 )
 
 nvidia_drivers=(
-  nvidia-driver-G06
+  nvidia-video-G06
   nvidia-driver-G06-kmp-default
   nvidia-video-G06
   nvidia-gl-G06
@@ -36,7 +35,7 @@ source "$(dirname "$(readlink -f "$0")")/Global_functions.sh"
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_nvidia.log"
 
 # adding NVIDIA repo
-sudo zypper -n --quiet ar --refresh -p 90 https://download.nvidia.com/opensuse/tumbleweed NVIDIA
+sudo zypper install openSUSE-repos-Slowroll-NVIDIA
 sudo zypper --gpg-auto-import-keys refresh 2>&1 | tee -a "$LOG"
 
 # Install additional Nvidia packages

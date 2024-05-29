@@ -3,7 +3,7 @@
 # SDDM with optional SDDM theme #
 
 sddm=(
-  sddm-qt6
+  sddm
   xauth
   xorg-x11-server
   xf86-input-evdev
