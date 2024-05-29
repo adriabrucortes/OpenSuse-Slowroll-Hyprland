@@ -3,6 +3,7 @@
 # Nvidia - Check Readme for more details for the drivers #
 
 nvidia_pkg=(
+  openSUSE-repos-Slowroll-NVIDIA
   dkms
   libvdpau1
   libva-vdpau-driver
@@ -34,7 +35,6 @@ source "$(dirname "$(readlink -f "$0")")/Global_functions.sh"
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_nvidia.log"
 
 # adding NVIDIA repo
-sudo zypper install openSUSE-repos-Slowroll-NVIDIA
 sudo zypper --gpg-auto-import-keys refresh 2>&1 | tee -a "$LOG"
 
 # Install additional Nvidia packages
