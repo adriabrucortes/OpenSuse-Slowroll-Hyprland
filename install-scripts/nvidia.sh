@@ -3,7 +3,7 @@
 # Nvidia - Check Readme for more details for the drivers #
 
 nvidia_pkg=(
-  openSUSE-repos-NVIDIA
+  openSUSE-repos-Slowroll-NVIDIA
   dkms
   libvdpau1
   libva-vdpau-driver
