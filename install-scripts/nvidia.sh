@@ -16,7 +16,6 @@ nvidia_pkg=(
 nvidia_drivers=(
   nvidia-video-G06
   nvidia-driver-G06-kmp-default
-  nvidia-video-G06
   nvidia-gl-G06
   nvidia-utils-G06
 )
