@@ -7,6 +7,9 @@ sddm=(
   xauth
   xorg-x11-server
   xf86-input-evdev
+  libqt5-qtgraphicaleffects
+  libqt5-qtquickcontrols
+  libqt5-qtquickcontrols2
 )
 
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
